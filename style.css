@@ -1,0 +1,267 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #000;
+    color: white;
+    font-family: " poppins ", sans-serif;
+}
+
+
+
+.navbar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 3% 3%;
+    z-index: 10;
+}
+
+/* navbar div  */
+.navbar_netflix {
+    width: 125px;
+    height: 100%;
+
+}
+
+.navbar_item {
+    display: flex;
+    gap: 10px;
+}
+
+.netflix_logo {
+    width: 100%;
+    height: 100%;
+    /* size: 5cm; */
+}
+
+.lang_drop_down {
+    background: transparent;
+    border: none;
+    color: white;
+}
+
+.dropdown_container {
+    border: 1px solid white;
+    padding: 0.4rem;
+    border-radius: 4px;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.signin_button , .get_started{
+    border: #dc030f;
+    background: #dc030f;
+    color: white;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+    height: 35px;
+    width: 100px;
+}
+.signin_button ,.get_started:hover {
+  box-shadow: 0 0 120px rgba(241, 205, 205, 0.5); /* Add a shadow on hover */
+}
+
+.signin_button:active {
+  box-shadow: 0 0 15px rgba(255, 221, 221, 0.8); /* Add a stronger shadow when clicked */
+  
+}
+
+/* background img */
+.hero_bg_img_container {
+    width: 100%;
+    height: 100%;
+}
+
+.hero_bg_img {
+    width: 100%;
+    height: 1000%;
+    object-fit: cover;
+}
+
+.hero_bg_overlay {
+    position: absolute;
+    inset: 0;
+    /*rather than margin*/
+    width: 100%;
+    height: 124%;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+/* card*/
+.hero_card {
+    position: absolute;
+    top: 35%;
+    left: 22%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.hero_title {
+    font-weight: 600;
+    font-size: 3rem;
+
+}
+
+.hero_subtitle,
+.hero_description {
+    font-weight: 400;
+    font-size: 1.3rem;
+
+}
+
+.email {
+    width: 650px;
+    height: 60px;
+    color: black;
+    padding: 0.25rem 0.5rem;
+    border-radius: 3px;
+    border-color: white;
+}
+
+.get_started {
+    font-size: large;
+    width: 170px;
+    height: 60px;
+    background-color: #dc030f;
+    border: 1px solid #dc030f;
+    color: white;
+}
+
+.card-1,
+.card-2,
+.card-3 {
+    border-top: 8px rgb(69, 69, 69);
+    padding: 50px;
+}
+
+.card-1 {
+    position: relative;
+    display: inline-grid;
+    grid-template-columns: 50% 40%;
+    text-align: left;
+    align-items: center;
+    padding: 25px 45px 50px;
+}
+
+.desc-1 {
+    padding-left: 80px;
+
+}
+
+.card-1 video {
+    position: relative;
+    width: 100%;
+    height: 54%;
+    grid-column: 2/2;
+    grid-row: 1/2;
+    z-index: -1;
+}
+
+.card-1 img {
+    grid-column: 2/2;
+    grid-row: 1/2;
+
+}
+
+.style-cards .card-1,
+.card-2,
+.card-3 , .card-4 h1 {
+    font-size: 3rem;
+    padding: 1rem;
+    padding-left: 0;
+}
+
+.style-cards .card-1,
+.card-2,
+.card-3, .card-4h3 {
+    font-size: 1.6rem;
+    line-height: 2rem;
+}
+
+.card-2 {
+    display: flex;
+    align-items: center; 
+    /* justify-content: space-between; */
+    padding: 20px; }
+  
+  
+.card-3 {
+    position: relative;
+    display: inline-grid;
+    grid-template-columns: 50% 40%;
+    text-align: left;
+    align-items: center;
+    padding: 25px 45px 50px;
+}
+
+.desc-3 {
+    padding-left: 80px;
+    padding-right: 20px;
+}
+
+.card-3 img {
+    width: 110%;
+    grid-column: 2/2;
+    grid-row: 1/2;
+}
+
+.card-3 video {
+    position: relative;
+    top: -87px;
+    left: 125px;
+    width: 65%;
+    height: 78%;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    z-index: -1;
+}
+
+.card-4 {
+    display: flex;
+    align-items: center; 
+    /* justify-content: space-between; */
+    padding: 20px;
+ }
+
+hr {
+    height: 0.3rem;
+    border:0.2rem solid rgb(34, 34, 34);
+    color:gray; 
+    background-color:rgb(37, 37, 37)"
+}
+
+/* styling footer */
+
+.footer,.footer a
+/* .footer a  for all the text we right in footer */
+{
+color: #999;
+font-size: 0.9rem;
+margin: 3%;
+
+}
+.footer p{
+    margin-bottom: 1.5rem;
+    padding-left: 40px;
+}
+
+.footer .footer-cols{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 2rem;
+    padding-left: 50px;
+
+}
+.footer li{
+line-height: 1.9;
+
+}
